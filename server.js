@@ -15,10 +15,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Замените на свой домен
-    methods: ['GET', 'POST', 'PUT'], // Разрешенные HTTP-методы
-    allowedHeaders: ['Content-Type', 'Authorization'], // Разрешенные заголовки
-    maxAge: 600, // Время кэширования предварительных запросов (preflight)
+    origin: 'http://localhost:5173',
+    methods: ['GET', 'POST', 'PUT'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    maxAge: 600,
 }));
 
 app.post('/login', (request, response) => {
